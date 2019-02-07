@@ -1,4 +1,4 @@
-FROM hendal/laravel-postgresql:7.1
+FROM hendal/laravel-postgresql:7.2
 
 RUN apt-get update \
   && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
