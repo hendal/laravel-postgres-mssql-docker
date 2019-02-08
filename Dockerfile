@@ -11,3 +11,4 @@ RUN apt-get update \
 
 RUN pecl install sqlsrv pdo_sqlsrv \
   && docker-php-ext-enable sqlsrv pdo_sqlsrv
+ 
