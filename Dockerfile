@@ -7,6 +7,7 @@ RUN apt-get update \
   && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen locale-gen \
   && apt-get update \
   && ACCEPT_EULA=y apt-get -y --no-install-recommends install unixodbc-dev msodbcsql17 \
+  && apt-get install nodejs -y \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 
 RUN pecl install sqlsrv pdo_sqlsrv \
